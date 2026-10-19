@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách câu hỏi</title>
+</head>
+<body>
+  <h1>Danh sách câu hỏi</h1>
+
+  <% if (questions.length === 0) { %>
+    <p>Chưa có câu hỏi nào.</p>
+  <% } else { %>
+    <ul>
+      <% questions.forEach(question => { %>
+        <li><%= question.text %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
